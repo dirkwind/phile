@@ -4,3 +4,13 @@ food
     protein
         f beef.txt
         f chicken.txt
+
+animals
+    mammals
+        f cow.txt
+        f human.txt
+    reptiles
+        f bull snake.txt
+        f frog.txt
+    fish
+        f catfish.txt
