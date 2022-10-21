@@ -1,16 +1,16 @@
 food
     grains
-        f wheat.txt
+        :f wheat.txt
     protein
-        f beef.txt
-        f chicken.txt
+        :f beef.txt
+        :f chicken.txt
 
 animals
     mammals
-        f cow.txt
-        f human.txt
+        :f cow.txt
+        :f human.txt
     reptiles
-        f bull snake.txt
-        f frog.txt
+        :f bull snake.txt
+        :f frog.txt
     fish
-        f catfish.txt
+        :f catfish.txt

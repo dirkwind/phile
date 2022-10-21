@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import os
 import sys
+from collections import deque
 
 
 def get_indent_level(string: str, *, indent: int=4) -> int:
@@ -14,9 +15,9 @@ def get_indent_level(string: str, *, indent: int=4) -> int:
     return space_count // indent
 
 
-def execute(lines: list(str), path: list(str) | None = None, prev_level: int = -1, pos: int = 0) -> None:
+def execute(lines: list(str), path: deque(str) | None = None, prev_level: int = -1, pos: int = 0) -> None:
     if path is None:
-        path = ['.']
+        path = deque(["."])
 
     if pos >= len(lines):
         return
@@ -33,7 +34,7 @@ def execute(lines: list(str), path: list(str) | None = None, prev_level: int = -
     line = line.strip()
 
     if line != '':
-        if not line.startswith("f "):
+        if not line.startswith(":f "):
             
 
             path.append(line)
